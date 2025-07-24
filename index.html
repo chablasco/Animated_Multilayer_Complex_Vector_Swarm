@@ -81,9 +81,16 @@ class Particle {
   }
 }
 
+function mousePressed() {
+  fullscreen(!fullscreen());
+}
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  setupGrid();
 }
+
+
 </script>
 </body>
 </html>
